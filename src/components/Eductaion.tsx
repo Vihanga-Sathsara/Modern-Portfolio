@@ -12,8 +12,8 @@ const educationData = [
   },
   {
     title: "G.C.E. Advanced Level",
-    institution: "MR/Thelijjawila Central College",
-    period: "Graduated Jan 2022",
+    institution: "Matara Central College",
+    period: "2018",
     description:
       "Completed secondary education with a focus on core academic foundations before transitioning into specialized software engineering studies.",
     skills: [],
