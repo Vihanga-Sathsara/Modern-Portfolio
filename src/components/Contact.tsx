@@ -25,11 +25,11 @@ export default function Contact() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <FaEnvelope className="text-purple-500 text-xl" />
-              <span>sachinthaprabhashana2003@gmail.com</span>
+              <span>sathsaravihanga27@gmail.com</span>
             </div>
             <div className="flex items-center gap-3">
               <FaPhone className="text-purple-500 text-xl" />
-              <span>+94 762717290</span>
+              <span>+94 713839368</span>
             </div>
             <div className="flex items-center gap-3">
               <FaMapMarkerAlt className="text-purple-500 text-xl" />
@@ -51,13 +51,13 @@ export default function Contact() {
             type="text"
             placeholder="Name"
             className="p-3 rounded-lg bg-gray-700 bg-opacity-50 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
-            defaultValue="Sachintha Prabashana"
+            defaultValue="Vihanga Sathsara"
           />
           <input
             type="email"
             placeholder="Email"
             className="p-3 rounded-lg bg-gray-700 bg-opacity-50 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
-            defaultValue="sachinthaprabhashana2003@gmail.com"
+            defaultValue="sathsaravihanga27@gmail.com"
           />
           <input
             type="text"
