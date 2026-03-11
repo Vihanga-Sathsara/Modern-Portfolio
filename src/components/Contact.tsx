@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   return (
@@ -11,7 +12,6 @@ export default function Contact() {
           bg-clip-text text-transparent">Get in Touch</h2>
 
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12">
-        {/* Contact Info */}
         <motion.div
           className="flex-1 space-y-6"
           initial={{ opacity: 0, x: -50 }}
@@ -39,7 +39,6 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        {/* Contact Form */}
         <motion.form
           className="flex-1 flex flex-col gap-4 bg-gray-800 bg-opacity-20 p-6 rounded-lg border border-gray-700"
           initial={{ opacity: 0, x: 50 }}
