@@ -59,8 +59,9 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="min-h-screen bg-gray-900 text-white py-16 px-6">
-      <h2 className="text-4xl font-bold text-center mb-12">Skills & Technologies</h2>
+    <section id="skills" className="min-h-screen bg-gray-900 text-white py-22 px-6">
+      <h2 className="text-4xl font-bold text-center mb-12 bg-linear-to-r from-blue-400 via-purple-500 to-pink-500 
+          bg-clip-text text-transparent">Skills & Technologies</h2>
 
       <div className="flex flex-col gap-12 max-w-6xl mx-auto">
         {skillCategories.map((category, catIndex) => (

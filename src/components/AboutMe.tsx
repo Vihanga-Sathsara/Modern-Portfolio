@@ -1,10 +1,11 @@
 import { motion } from "framer-motion"
+import ProfileImg from "../assets/images/dp.png"
 
 export default function AboutMe() {
   return (
     <section 
       id="about"
-      className="min-h-screen w-full flex items-center justify-center px-6"
+      className="min-h-screen w-full flex items-center justify-center py-22 px-6"
     >
       <div className="lg:w-[80%] md:w-[90%] w-[90%] text-center">
 
@@ -18,6 +19,19 @@ export default function AboutMe() {
         >
           About Me
         </motion.h2>
+
+         <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex justify-center mb-4"
+        >
+          <img
+            src={ProfileImg}
+            alt="Profile"
+            className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-blue-500 shadow-lg"
+          />
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}

@@ -7,6 +7,7 @@ import SpaceShooterimg from "../assets/images/spaceshooter.png";
 import SkillLinkimg from "../assets/images/skilllink.jpeg";
 import HotelWebimg from "../assets/images/hotelweb.png";
 import ReviewSiteimg from "../assets/images/reviewsite.png";
+import MentalTherapyCenterimg from "../assets/images/mentaltherapycenter.png";
 
 const projects = [
   {
@@ -87,7 +88,7 @@ const projects = [
     "The Mental Therapy Center Management system is a desktop application designed to streamline therapy center operations. Built with JavaFX for the UI and MySQL for data storage, it handles user authentication, appointment scheduling, session tracking, and reporting using a clean MVC and Layered Architecture.",
   tech: ["Java", "JavaFX", "MySQL"],
   link: "https://github.com/Vihanga-Sathsara/Mental_Therapy_Center_Management",
-  image: "/images/mental-therapy-center.png"
+  image: MentalTherapyCenterimg
 },
 {
   id: 6,
@@ -123,8 +124,9 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
   
   return (
-    <section id="projects" className="min-h-screen text-white py-16 px-6 w-[80%] items-center justify-center mx-auto mt-12">
-      <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
+    <section id="projects" className="min-h-screen text-white py-22 px-6 w-[80%] items-center justify-center mx-auto mt-12">
+      <h2 className="text-4xl font-bold text-center mb-12 bg-linear-to-r from-blue-400 via-purple-500 to-pink-500 
+          bg-clip-text text-transparent">My Projects</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {projects.map((project) => (

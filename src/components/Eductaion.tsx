@@ -23,8 +23,9 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section id="education" className="min-h-screen text-white py-16 px-6">
-      <h2 className="text-4xl font-bold text-center mb-12">Education</h2>
+    <section id="education" className="min-h-screen text-white py-22 px-6">
+      <h2 className="text-4xl font-bold text-center mb-12 bg-linear-to-r from-blue-400 via-purple-500 to-pink-500 
+          bg-clip-text text-transparent">Education</h2>
 
       <div className="flex flex-col gap-12 max-w-4xl mx-auto">
         {educationData.map((edu, index) => (

@@ -5,9 +5,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen text-white py-16 px-6"
+      className="min-h-screen text-white py-22 px-6"
     >
-      <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
+      <h2 className="text-4xl font-bold text-center mb-12 bg-linear-to-r from-blue-400 via-purple-500 to-pink-500 
+          bg-clip-text text-transparent">Get in Touch</h2>
 
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12">
         {/* Contact Info */}

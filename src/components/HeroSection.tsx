@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { Typewriter } from "react-simple-typewriter"
 import { FaArrowRight, FaDownload, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
+
 export default function HeroSection() {
     return (
         <section id="home" className="w-full flex items-center justify-center min-h-screen relative overflow-hidden mt-12">
@@ -54,16 +55,24 @@ export default function HeroSection() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 2.5 }}
                         className="w-full flex flex-row gap-3 items-center justify-center mt-7">
-                        <button className="mt-4 px-6 py-3 border border-b-blue-500 border-r-blue-500 border-l-purple-500 border-t-purple-500  text-white rounded-lg hover:bg-gray-900 transition-colors duration-300 text-[10px] md:text-2xl lg:text-lg">View My Work<FaArrowRight className="ml-2 inline-block" /></button>
-                        <button className="mt-4 px-6 py-3 border border-b-blue-500 border-r-blue-500 border-l-purple-500 border-t-purple-500 text-white rounded-lg hover:bg-gray-900 transition-colors duration-300 text-[10px] md:text-2xl lg:text-lg">Download CV<FaDownload className="ml-2 inline-block" /></button>
+                        <a href="#projects">
+                            <button className="mt-4 px-6 py-3 border border-b-blue-500 border-r-blue-500 border-l-purple-500 border-t-purple-500 text-white rounded-lg hover:bg-gray-900 transition-colors duration-300 text-[10px] md:text-2xl lg:text-lg cursor-pointer">
+                                View My Work<FaArrowRight className="ml-2 inline-block" />
+                            </button>
+                        </a>       
+                        <a href="/documents/VihangaSathsara.pdf"  rel="noopener noreferrer" target="_blank" download>
+                            <button className="mt-4 px-6 py-3 border border-b-blue-500 border-r-blue-500 border-l-purple-500 border-t-purple-500 text-white rounded-lg hover:bg-gray-900 transition-colors duration-300 text-[10px] md:text-2xl lg:text-lg cursor-pointer">
+                                Download CV <FaDownload className="ml-2 inline-block" />
+                            </button>
+                        </a>   
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 3 }}
                         className="w-full flex flex-row gap-3 items-center justify-center mt-7">
-                        <a href="https://www.linkedin.com/in/vihanga-sathsara-9b1a4b1b2/" target="_blank" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 lg:text-3xl text-xl border rounded-full p-4"><FaLinkedin /></a>
-                        <a href="https://github.com/vihangasathsara" target="_blank" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 lg:text-3xl text-xl border rounded-full p-4"><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/vihanga-sathsara-363100265/" target="_blank" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 lg:text-3xl text-xl border rounded-full p-4"><FaLinkedin /></a>
+                        <a href="https://github.com/Vihanga-Sathsara" target="_blank" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 lg:text-3xl text-xl border rounded-full p-4"><FaGithub /></a>
                     </motion.div>
                 </div>
             </div>
