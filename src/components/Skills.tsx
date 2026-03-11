@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaJava, FaDatabase, FaGithub, FaDocker } from "react-icons/fa";
-import { SiTailwindcss, SiSpringboot, SiMongodb, SiMysql, SiTypescript, SiJenkins } from "react-icons/si";
+import { 
+  FaReact, FaNodeJs, FaJava, FaGithub, FaDocker, 
+  FaFigma, FaHtml5, FaCss3Alt, FaGitAlt 
+} from "react-icons/fa";
+
+import { 
+  SiTailwindcss, SiSpringboot, SiMongodb, SiMysql, 
+  SiTypescript, SiNextdotjs, SiJavascript, SiBootstrap, 
+  SiExpress, SiHibernate, SiPostman, SiFirebase, SiVercel
+} from "react-icons/si";
 
 const skillCategories = [
   {
@@ -8,8 +16,14 @@ const skillCategories = [
     skills: [
       { name: "React", icon: <FaReact className="text-blue-400 text-2xl" /> },
       { name: "React Native", icon: <FaReact className="text-cyan-400 text-2xl" /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-purple-500 text-2xl" /> },
+      { name: "Next.js", icon: <SiNextdotjs className="text-black text-2xl" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-blue-600 text-2xl" /> },
+      { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 text-2xl" /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400 text-2xl" /> },
+      { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600 text-2xl" /> },
+      { name: "Figma", icon: <FaFigma className="text-pink-500 text-2xl" /> },
+      { name: "HTML5", icon: <FaHtml5 className="text-orange-600 text-2xl" /> },
+      { name: "CSS3", icon: <FaCss3Alt className="text-blue-500 text-2xl" /> },
     ],
   },
   {
@@ -18,6 +32,10 @@ const skillCategories = [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-2xl" /> },
       { name: "Java", icon: <FaJava className="text-red-600 text-2xl" /> },
       { name: "Spring Boot", icon: <SiSpringboot className="text-green-600 text-2xl" /> },
+      { name: "Express.js", icon: <SiExpress className="text-white text-2xl" /> },
+      { name: "Hibernate", icon: <SiHibernate className="text-yellow-700 text-2xl" /> },
+      { name: "REST API", icon: <SiPostman className="text-orange-500 text-2xl" /> },
+      { name: "Firebase", icon: <SiFirebase className="text-yellow-400 text-2xl" /> },
     ],
   },
   {
@@ -25,15 +43,17 @@ const skillCategories = [
     skills: [
       { name: "MySQL", icon: <SiMysql className="text-orange-500 text-2xl" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-400 text-2xl" /> },
+      { name: "Firestore", icon: <SiFirebase className="text-yellow-400 text-2xl" /> },
     ],
   },
   {
     category: "DevOps & Tools",
     skills: [
-      { name: "Git & GitHub", icon: <FaGithub className="text-gray-300 text-2xl" /> },
-      { name: "Docker", icon: <FaDocker className="text-blue-400 text-2xl" /> },
-      { name: "Jenkins", icon: <SiJenkins className="text-red-400 text-2xl" /> },
-    ],
+    { name: "Git", icon: <FaGitAlt className="text-orange-500 text-2xl" /> },
+    { name: "GitHub", icon: <FaGithub className="text-gray-300 text-2xl" /> },
+    { name: "Docker", icon: <FaDocker className="text-blue-400 text-2xl" /> },
+    { name: "Vercel", icon: <SiVercel className="text-white text-2xl" /> },
+  ],
   },
 ];
 
