@@ -1,5 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import JustRideImg from "../assets/images/justride.png";
+import POSimg from "../assets/images/pos_system.png";
+import EduFlowimg from "../assets/images/eduflow.png";
+import SpaceShooterimg from "../assets/images/spaceshooter.png";
+import SkillLinkimg from "../assets/images/skilllink.jpeg";
+import HotelWebimg from "../assets/images/hotelweb.png";
+import ReviewSiteimg from "../assets/images/reviewsite.png";
 
 const projects = [
   {
@@ -10,7 +17,7 @@ const projects = [
     "SkillLink is a mobile-first marketplace application that connects skilled professionals with clients. Service providers can create profiles, publish their services, and manage bookings, while clients can search, explore, and request services easily. The application uses Firebase Authentication for secure login and Firestore for real-time cloud data management, ensuring scalability and smooth performance across Android and iOS devices.",
   tech: ["React Native", "Firebase", "Firestore", "Expo"],
   link: "https://github.com/Vihanga-Sathsara/SkillLink",
-  image: "/images/skilllink.png", // replace with your actual image path
+  image: SkillLinkimg
 },
  {
   id: 2,
@@ -31,7 +38,7 @@ const projects = [
   ],
   link: "https://github.com/Vihanga-Sathsara/EduFlow-FrontEnd",
   backendLink: "https://github.com/Vihanga-Sathsara/EduFlow-BackEnd",
-  image: "/images/eduflow.png",
+  image: EduFlowimg,
 },
 {
   id: 3,
@@ -52,7 +59,7 @@ const projects = [
     "Maven"
   ],
   link: "https://github.com/Vihanga-Sathsara/JustRide",
-  image: "/images/justride.png"
+  image: JustRideImg
 },
 {
   id: 4,
@@ -70,7 +77,7 @@ const projects = [
     "Layered Architecture"
   ],
   link: "https://github.com/Vihanga-Sathsara/Aquarium-Managment-System",
-  image: "/images/aquarium-management.png"
+  image: POSimg
 },
 {
   id: 5,
@@ -90,7 +97,7 @@ const projects = [
     "HotelSite is a fully responsive website designed for hotel businesses, showcasing rooms, services, and amenities. Built with HTML, CSS, and Bootstrap for modern layout, responsiveness, and smooth user experience.",
   tech: ["HTML", "CSS", "Bootstrap"],
   link: "https://github.com/Vihanga-Sathsara/HotelSite-Boostrap",
-  image: "/images/hotel-site.png"
+  image: HotelWebimg
 },
 {
   id: 7,
@@ -99,7 +106,7 @@ const projects = [
   fullDesc: "This project is a dynamic review website where users can submit and browse reviews for products or services. Built using HTML, CSS, and JavaScript, it demonstrates responsive design and interactive user experience.",
   tech: ["HTML", "CSS", "JavaScript"],
   link: "https://github.com/Vihanga-Sathsara/Review-website",
-  image: "/images/review-website.png" // replace with your image path
+  image: ReviewSiteimg
 },
 {
   id: 8,
@@ -108,7 +115,7 @@ const projects = [
   fullDesc: "This project is an interactive 2D space shooter game where players can control a spaceship, shoot enemies, and collect power-ups. Built using HTML, CSS, and JavaScript, it showcases game logic, animations, and collision detection.",
   tech: ["HTML", "CSS", "JavaScript"],
   link: "https://github.com/Vihanga-Sathsara/Space_Shooter_Game",
-  image: "/images/space-shooter.png" // replace with your image path
+  image: SpaceShooterimg
 }
 ];
 
